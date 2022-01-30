@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Steam</title>
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="Hao Zhenyu">
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+      <script src="/static/js/echarts.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+            <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+               <a class="navbar-brand">Les jeux Top50 les plus populaires de Steam</a>
+               <form class="form-inline">
+
+               </form>
+            </nav>
+		</div>
+	</div>
+     <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+      // Initialize the echarts instance based on the prepared dom
+      var myChart = echarts.init(document.getElementById('main'));
+
+      // Specify the configuration items and data for the chart
+      var option = {
+        title: {
+          text: 'Distribution des prix des jeux du Top50'
+        },
+        tooltip: {},
+        legend: {
+
+           orient: 'vertical',
+          right: 10,   // top: 'center'
+
+
+        },
+        xAxis: {
+          data:  [ '59,99€', '49,99€', '29,99€', '24,99€', '23,99€', '39,99€', '12,59€', '15,99€', '53,99€', '26,79€', '43,99€', '32,45€', '34,99€', '12,75€', '17,99€', '14,99€', '19,99€', '20,39€', '11,99€', '5,87€', '39,57€', '10,99€', '47,99€', '20,99€', '38,99€', '22,49€', '35,99€', '12,99€', '99,99€', '3,99€', '2,39€']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: 'Pourcentage',
+            type: 'bar',
+            data: [14, 10, 6, 6, 4, 4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
+          }
+        ]
+      };
+
+      // Display the chart using the configuration items and data just specified.
+      myChart.setOption(option);
+    </script>
+
+
+
+
+
+
+
+	<div class="row">
+		<div class="col-md-4">
+			<img alt="图像引导预览" src="https://cdn.akamai.steamstatic.com/steam/subs/588546/capsule_sm_120.jpg?t=1639169470">
+			<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+				Lost Ark Platinum Founder's Pack
+			</font></font></h2>
+			<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+				Embarquez-vous dans une odyssée en quête de l'Arche perdue dans un monde vaste et dynamique : explorez de nouvelles terres, cherchez des trésors perdus et relevez le défi de combats trépidants dans ce RPG free-to-play bourré d'action.
+			</font></font></p>
+
+		</div>
+		<div class="col-md-4">
+			<img alt="图像引导预览" src="https://cdn.cloudflare.steamstatic.com/steam/apps/534380/capsule_sm_120.jpg?t=1643207355">
+			<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+				Dying Light 2 Stay Human
+			</font></font></h2>
+			<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+				Le virus a gagné. La civilisation est revenue au Moyen Âge. La ville, l'un des derniers grands refuges humains, est au bord de l'effondrement. Utilisez votre agilité et vos talents martiaux pour survivre et rebâtir le monde. Vos choix peuvent changer la donne.
+			</font></font></p>
+
+		</div>
+		<div class="col-md-4">
+			<img alt="图像引导预览" src="https://cdn.akamai.steamstatic.com/steam/apps/1142710/capsule_sm_120.jpg?t=1643208105">
+			<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+				Total War: WARHAMMER III
+			</font></font></h2>
+			<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+               La conclusion cataclysmique de la trilogie Total War : WARHAMMER approche. Ralliez vos forces et pénétrez dans le Royaume du Chaos, une dimension d'horreur hallucinante où le destin du monde tout entier va se jouer. Parviendrez-vous à triompher de vos démons… ou à leur commander ?
+			</font></font></p>
+
+		</div>
+	</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							#
+						</font></font></th>
+						<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Title
+						</font></font></th>
+						<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Data
+						</font></font></th>
+						<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Price
+						</font></font></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							1
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Dying Light 2 Stay Human
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2022-02-04
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							59,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-active">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Total War: WARHAMMER III
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2022-02-17
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							59,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-success">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							3
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Lost Ark Platinum Founder's Pack
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2022-02-11
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							99,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-warning">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							4
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Cyberpunk 2077
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2020-12-09
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							29,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-danger">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							5
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Sekiro™: Shadows Die Twice - GOTY Edition
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2019-03-21
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							29,99€
+						</font></font></td>
+					</tr>
+					<tr>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							6
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Football Manager 2022
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-11-08
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							43,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-active">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							7
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Satisfactory
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2020-06-08
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							20,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-success">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							8
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Ready or Not
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-12-17
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							35,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-warning">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							9
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Sea of Thieves
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2020-06-03
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							"26,79€
+						</font></font></td>
+					</tr>
+					<tr class="table-danger">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							10
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							God of War
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2022-01-14
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							49,99€
+						</font></font></td>
+					</tr>
+                    <tr>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							11
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Sekiro™: Shadows Die Twice - GOTY Edition
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+								2019-03-21
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							29,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-active">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							12
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Rust
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2018-02-08
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							26,79€
+						</font></font></td>
+					</tr>
+					<tr class="table-success">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							13
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							It Takes Two
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-03-25
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							19,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-warning">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							14
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							FIFA 22
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2020-12-09
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							23,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-danger">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							15
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							The Forest
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2018-04-30
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							5,87€
+						</font></font></td>
+					</tr>
+                					<tr>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							16
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Lost Ark Silver Founder's Pack
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2022-02-11
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							24,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-active">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							17
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Mass Effect™ Legendary Edition
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-05-14
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+						   29,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-success">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							18
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Escape Simulator
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-10-19
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							11,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-warning">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							19
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							ELDEN RING
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2022-02-24
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							"59,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-danger">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							20
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Half-Life: Alyx
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2020-03-23
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							24,99€
+						</font></font></td>
+					</tr>
+                					<tr>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							21
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Vampire Survivors
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-12-17
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2,39€
+						</font></font></td>
+					</tr>
+					<tr class="table-active">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							22
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Age of Empires IV
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-10-28
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							53,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-success">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							23
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Horizon Zero Dawn™ Complete Edition
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2020-08-07
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							24,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-warning">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							24
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							MONSTER HUNTER RISE
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2022-01-12
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							59,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-danger">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							25
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Raft
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2018-05-23
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							13,39€
+						</font></font></td>
+					</tr>
+                					<tr>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							26
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Phasmophobia
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2020-09-18
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							10,43€
+						</font></font></td>
+					</tr>
+					<tr class="table-active">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							27
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							The Binding of Isaac: Rebirth Complete Bundle
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2016-08-30
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							32,45€
+						</font></font></td>
+					</tr>
+					<tr class="table-success">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							28
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							The Witcher 3: Wild Hunt - Game of the Year Edition
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2022-02-11
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							9,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-warning">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							29
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Zenith: The Last City
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-12-01
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							22,49€
+						</font></font></td>
+					</tr>
+					<tr class="table-danger">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							30
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Wartales
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-05-07
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							29,74€
+						</font></font></td>
+					</tr>
+                					<tr>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							31
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Resident Evil Village
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2017-08-27
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							29,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-active">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							32
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							ARK: Survival Evolved
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2019-10-15
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							8,24€
+						</font></font></td>
+					</tr>
+					<tr class="table-success">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							33
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Disco Elysium - The Final Cut
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2017-09-14
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							15,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-warning">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							34
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Grand Theft Auto V: Premium Edition
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-11-21
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							14,80€
+						</font></font></td>
+					</tr>
+					<tr class="table-danger">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							35
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Divinity: Original Sin 2 - Definitive Edition
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-02-02
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							17,99€
+						</font></font></td>
+					</tr>
+                					<tr>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							36
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Farming Simulator 22
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2019-12-05
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							39,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-active">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							37
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Valheim
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-09-02
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							12,59€
+						</font></font></td>
+					</tr>
+					<tr class="table-success">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							38
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Red Dead Redemption 2
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2015-11-05
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							29,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-warning">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							39
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Pathfinder: Wrath of the Righteous
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2017-09-28
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							39,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-danger">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							40
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Call of Duty®: Black Ops III
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2018-12-13
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							"19,79€
+						</font></font></td>
+					</tr>
+                					<tr>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							41
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							DayZ
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2021-12-16
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							23,99€
+						</font></font></td>
+					</tr>
+					<tr class="table-active">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							42
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Battlefield™ 2042
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2022-02-11
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							34,79€
+						</font></font></td>
+					</tr>
+					<tr class="table-success">
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							43
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							Five Nights at Freddy's: Security Breach
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							2022-02-04
+						</font></font></td>
+						<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							33,99€
+						</font></font></td>
+					</tr>
+
+				</tbody>
+			</table>
+
+
+</div>
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/scripts.js"></script>
+  </body>
+</html>

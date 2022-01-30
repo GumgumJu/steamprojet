@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <script src="/static/js/echarts.js"></script>
+  </head>
+  <body>
+    <!-- Prepare a DOM with a defined width and height for ECharts -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+      // Initialize the echarts instance based on the prepared dom
+      var myChart = echarts.init(document.getElementById('main'));
+
+      // Specify the configuration items and data for the chart
+      var option = {
+        title: {
+          text: 'Distribution des prix des jeux du Top50'
+        },
+        tooltip: {},
+        legend: {
+
+           orient: 'vertical',
+          right: 10,   // top: 'center'
+
+
+        },
+        xAxis: {
+          data:  [ '59,99€', '49,99€', '29,99€', '24,99€', '23,99€', '39,99€', '12,59€', '15,99€', '53,99€', '26,79€', '43,99€', '32,45€', '34,99€', '12,75€', '17,99€', '14,99€', '19,99€', '20,39€', '11,99€', '5,87€', '39,57€', '10,99€', '47,99€', '20,99€', '38,99€', '22,49€', '35,99€', '12,99€', '99,99€', '3,99€', '2,39€']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: 'Pourcentage',
+            type: 'bar',
+            data: [12, 8, 8, 6, 6, 4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
+          }
+        ]
+      };
+
+      // Display the chart using the configuration items and data just specified.
+      myChart.setOption(option);
+    </script>
+  </body>
+</html>
